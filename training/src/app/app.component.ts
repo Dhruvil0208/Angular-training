@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'training';
   data = 'code step by step';
-  getValue(){
-    return "get function data";
+  getValue(name:string){
+      alert(name)
   }
+  
+
 }
