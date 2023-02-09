@@ -47,10 +47,38 @@ build commands
 
 <p>Count: {{count}}</p> -->
 
+
+<!-- property binding
 <h1 class="heading">{{title}}</h1>
 
         <input type="text" name="username" value={{name}} disabled={{disable}}>
 
 <br>
 
-<input type="text " name="username" [value] = name [disabled]="disable"> 
+<input type="text " name="username" [value] = name [disabled]="disable">  -->
+
+<!-- if else 
+
+<h1 *ngIf="show; then ifblock else elseblock"></h1>
+
+<ng-template #ifblock>
+    <h1>if condition</h1>
+</ng-template>
+
+<ng-template #elseblock>
+    <h1>else condition</h1>
+</ng-template> -->
+
+if else ladder
+
+<ng-template [ngIf] = "color==='red'">
+    <h1 style="color:red">red color</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color==='green'">
+    <h1 style="color:green"> green color</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color==='blue'">
+    <h1 style="color:blue">blue color</h1>
+</ng-template>

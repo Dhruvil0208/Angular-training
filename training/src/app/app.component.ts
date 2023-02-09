@@ -27,4 +27,6 @@ export class AppComponent {
   //}
   name = "string";
   disable = false;
+  show = true;
+  color = 'blue';
 }
