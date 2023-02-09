@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  // title = 'training';
+   title = 'training';
   // data = 'code step by step';
   // getValue(name:string){
   //     console.log(name)
@@ -16,13 +16,15 @@ export class AppComponent {
   // //   console.warn(val)
   // // }
   // displayValue:string = '';
-  count:number = 0;
-  counter( type : string){
-    if(type === 'incr'){
-      this.count++;
-    }
-    else if(type === 'decr'){
-      this.count--;
-    }
-  }
+  // count:number = 0;
+  // counter( type : string){
+  //   if(type === 'incr'){
+  //     this.count++;
+  //   }
+  //   else if(type === 'decr'){
+  //     this.count--;
+  //   }
+  //}
+  name = "string";
+  disable = false;
 }
