@@ -25,3 +25,15 @@ build commands
 <app-login></app-login>
 
 <button (click)="getValue('5')">click me</button>
+<button  (mouseover)="getdata('over')" (click)="getdata('hello')">click me</button>
+
+<br>
+<br>
+<input type="text" #box placeholder="keyup event" (keyup)="getdata(box.value)">
+<input type="text" #box1 placeholder="keydown event" (keydown)="getdata(box1.value)">
+<input type="text" #box2 placeholder="blur" (blur)="getdata(box2.value)">
+<input type="text" #box3 placeholder="input" (input)="getdata(box3.value)">
+
+<h1 (mouseover)="getdata('over')"> code step by step</h1>
+
+<h1 (mouseleave)="getdata('leave')"> code step by step</h1>
