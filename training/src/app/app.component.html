@@ -38,6 +38,11 @@ build commands
 
 <h1 (mouseleave)="getdata('leave')"> code step by step</h1> -->
 
-<input #box  type="text" placeholder="enter name" name="username" >
+<!-- <input #box  type="text" placeholder="enter name" name="username" >
 <button (click)="getValue(box.placeholder)">click</button>
-<p>{{displayValue}}</p>
+<p>{{displayValue}}</p> -->
+
+<button (click)="counter('incr')">Increment</button>
+<button (click)="counter('decr')">Decrement</button>
+
+<p>Count: {{count}}</p>
