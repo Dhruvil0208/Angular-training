@@ -19,7 +19,7 @@ build commands
     ng build
 -->
 
-<app-user-list></app-user-list>
+<!-- <app-user-list></app-user-list>
 <app-user-list></app-user-list>
  
 <app-login></app-login>
@@ -36,4 +36,8 @@ build commands
 
 <h1 (mouseover)="getdata('over')"> code step by step</h1>
 
-<h1 (mouseleave)="getdata('leave')"> code step by step</h1>
+<h1 (mouseleave)="getdata('leave')"> code step by step</h1> -->
+
+<input #box  type="text" placeholder="enter name" name="username" >
+<button (click)="getValue(box.placeholder)">click</button>
+<p>{{displayValue}}</p>
