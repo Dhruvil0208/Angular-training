@@ -83,7 +83,7 @@ build commands
     <h1 style="color:blue">blue color</h1>
 </ng-template> -->
 
-switch case 
+<!-- switch case 
 
 <div [ngSwitch]="color">
     <h1 *ngSwitchCase="'red'" style="color:red"> red color</h1>
@@ -93,4 +93,10 @@ switch case
     
     <h1 *ngSwitchCase="'yellow'" style="color:yellow"> yellow color</h1>
     <h1 *ngSwitchDefault > unknown color</h1>
-</div>
+</div> -->
+
+<h1>for loop</h1>
+
+<h3 *ngFor = "let item of users">Name is :{{item}}</h3>
+
+<h3 *ngFor = "let item of userDetails">Name is :{{item.name}} , {{item.email}} , {{item.phone}}</h3>

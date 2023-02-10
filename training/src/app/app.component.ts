@@ -25,8 +25,28 @@ export class AppComponent {
   //     this.count--;
   //   }
   //}
-  name = "string";
-  disable = false;
-  show = true;
-  color = 'green';
+  // name = "string";
+  // disable = false;
+  // show = true;
+  // color = 'green';
+
+  users = ['dhruvil','ruchit','meet'];
+  userDetails=[
+    {
+      name: 'dhruvil',
+      email:'dhruvil@test.com',
+      phone:'8888'
+    },
+    {
+      name: 'ruchit',
+      email:'ruchit@test.com',
+      phone:'8888'
+    },
+    {
+      name: 'meet',
+      email:'meet@test.com',
+      phone:'8888'
+    },
+
+  ]
 }
