@@ -69,7 +69,7 @@ build commands
     <h1>else condition</h1>
 </ng-template> -->
 
-if else ladder
+<!-- if else ladder
 
 <ng-template [ngIf] = "color==='red'">
     <h1 style="color:red">red color</h1>
@@ -81,4 +81,16 @@ if else ladder
 
 <ng-template [ngIf] = "color==='blue'">
     <h1 style="color:blue">blue color</h1>
-</ng-template>
+</ng-template> -->
+
+switch case 
+
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="color:red"> red color</h1>
+    <h1 *ngSwitchCase="'green'" style="color:green"> green color</h1>
+    
+    <h1 *ngSwitchCase="'blue'" style="color:blue"> blue color</h1>
+    
+    <h1 *ngSwitchCase="'yellow'" style="color:yellow"> yellow color</h1>
+    <h1 *ngSwitchDefault > unknown color</h1>
+</div>
