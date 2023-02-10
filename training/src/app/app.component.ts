@@ -30,22 +30,25 @@ export class AppComponent {
   // show = true;
   // color = 'green';
 
-  users = ['dhruvil','ruchit','meet'];
-  userDetails=[
+  //users = ['dhruvil','ruchit','meet'];
+  users=[
     {
       name: 'dhruvil',
       email:'dhruvil@test.com',
-      phone:'8888'
+      phone:'8888', 
+      accounts: ['facebook','insta','gmail']
     },
     {
       name: 'ruchit',
       email:'ruchit@test.com',
-      phone:'8888'
+      phone:'8888',
+      accounts: ['youtube','insta','gmail']
     },
     {
       name: 'meet',
       email:'meet@test.com',
-      phone:'8888'
+      phone:'8888',
+      accounts: ['linkedin','insta','gmail']
     },
 
   ]
