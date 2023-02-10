@@ -1,6 +1,6 @@
 import { compilePipeFromMetadata } from '@angular/compiler';
 import { Component } from '@angular/core';
-
+import {NgForm} from '@angular/forms'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
    title = 'style binding';
-  color = 'green';
-  bgColor = 'blue';
-  updateColor(){
-    this.color="gray";
+   userdata:any = {   }
+  getData(data:NgForm){
+    console.log(data);
+    this.userdata=data;
   }
 }

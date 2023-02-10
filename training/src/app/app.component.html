@@ -1,2 +1,17 @@
- <h1 [style.color]="color" [style.backgroundColor]="bgColor"> {{title}}</h1>
-<button (click)="updateColor()">change color</button>
+ <h1> {{title}}</h1>
+<form action="" #basicForm = "ngForm"  (ngSubmit)="getData(basicForm.value)">
+
+    <input type="text" ngModel name="username" placeholder="Enter user name">
+    <br><br>
+    <input type="text" ngModel name="email" placeholder="Enter user email">
+    <br><br>
+    <input type="text" ngModel name="phone" placeholder="Enter user phone">
+    <br><br>
+    <button >
+        submit
+    </button>
+
+</form>
+<li>{{userdata.username}}</li>
+<li>{{userdata.email}}</li>
+<li>{{userdata.phone}}</li>
