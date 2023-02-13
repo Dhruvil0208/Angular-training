@@ -7,15 +7,12 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   title = 'todolist';
-  list:any[]=[];
-  addTask(item:string){
-    console.log(item)
-    this.list.push({id:this.list.length,name:item})
+   title = 'Parent to child component';
+  data = 
+    {
+    name : 'dhruvil',
+    age : 18,
+    }
+  
 
-    console.log(this.list)
-  }
-  removeTask(id:number){
-    this.list = this.list.filter(item=>item.id!==id);
-  }
 }
