@@ -7,10 +7,15 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   title = 'style binding';
-   userdata:any = {   }
-  getData(data:NgForm){
-    console.log(data);
-    this.userdata=data;
+   title = 'todolist';
+  list:any[]=[];
+  addTask(item:string){
+    console.log(item)
+    this.list.push({id:this.list.length,name:item})
+
+    console.log(this.list)
+  }
+  removeTask(id:number){
+    this.list = this.list.filter(item=>item.id!==id);
   }
 }

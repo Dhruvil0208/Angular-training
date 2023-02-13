@@ -1,17 +1,9 @@
  <h1> {{title}}</h1>
-<form action="" #basicForm = "ngForm"  (ngSubmit)="getData(basicForm.value)">
+<input type="text" placeholder="enter task" #task>
+<br><br>
+<button (click)="addTask(task.value)">add task</button>
 
-    <input type="text" ngModel name="username" placeholder="Enter user name">
-    <br><br>
-    <input type="text" ngModel name="email" placeholder="Enter user email">
-    <br><br>
-    <input type="text" ngModel name="phone" placeholder="Enter user phone">
-    <br><br>
-    <button >
-        submit
-    </button>
-
-</form>
-<li>{{userdata.username}}</li>
-<li>{{userdata.email}}</li>
-<li>{{userdata.phone}}</li>
+<ng-template ngFor let-item [ngForOf]="list"> 
+    <li>{{item.name}} <button (click)="removeTask(item.id)">remove</button></li>
+    
+</ng-template>
