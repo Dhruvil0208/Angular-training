@@ -7,12 +7,12 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   title = 'Parent to child component';
-  data = 
-    {
-    name : 'dhruvil',
-    age : 18,
-    }
+   title = 'Child to parent component';
+   data="x";
+  updateData(item:string){
+    console.log(item);
+    this.data= item;
+  }
   
 
 }

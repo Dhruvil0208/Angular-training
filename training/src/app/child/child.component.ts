@@ -1,5 +1,5 @@
 import { JsonPipe } from '@angular/common';
-import { Component , Input} from '@angular/core';
+import { Component , Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,16 +7,9 @@ import { Component , Input} from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-  @Input() item!:{
-    name: string;
-    age: number;
-  } ;
-
-
-
-checktype(){
-  console.log(typeof(this.item))
-}
+  
+  @Output() updateDataEvent = new EventEmitter<string>();
+  
   
 
  }
