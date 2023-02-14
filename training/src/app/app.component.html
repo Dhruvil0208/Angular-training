@@ -1,5 +1,5 @@
- <h1> {{data}}</h1>
+ <h1> {{title}}</h1>
 
-    <app-child (updateDataEvent)="updateData($event)"></app-child>
- 
+ <input type="text " placeholder="enter any data" [(ngModel)]="data">
 
+ <p>{{data}}</p>
