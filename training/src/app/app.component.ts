@@ -7,9 +7,9 @@ import {NgForm} from '@angular/forms'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   title = 'two way binding';
+   title = 'template reference variable';
 
-   data!:FormDataEntryValue;
+   
    
 
 }
