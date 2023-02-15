@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import {ReactiveFormsModule} from '@angular/forms'
+import {ReactiveFormsModule} from '@angular/forms';
+import { RedElDirective } from './red-el.directive'
 
 
 
@@ -12,10 +13,11 @@ import {ReactiveFormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
+    RedElDirective,
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,20 +1,6 @@
 
 <h1> {{title | titlecase }}</h1>
 
-<form [formGroup]="loginForm" (ngSubmit)="userLogin()">
-    <input type="text" placeholder="Enter name" name="user" formControlName="user">
+<h1 appRedEl>{{title}}</h1>
 
-    <br>
-    <span *ngIf="userValidator && userValidator.invalid && userValidator.touched">this field is not valid</span>
-    <br>
-
-    <input type="text" placeholder="Enter Password" name="password"formControlName="password">
-    <br>
-    <span *ngIf="passwordValidator && passwordValidator.invalid && passwordValidator.touched">this field is not valid</span>
-    <br>
-    
-    
-    
-    <br><br>
-    <button [disabled]="loginForm.invalid">submit</button>
-</form>
+<h1 appRedEl>{{title}}</h1>
