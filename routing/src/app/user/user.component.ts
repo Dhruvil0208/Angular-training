@@ -11,5 +11,5 @@ export class UserComponent {
 ngOnInit():void {
   console.log("user id is :", this.route.snapshot.paramMap.get('id'));
 }
-  
+
 }
