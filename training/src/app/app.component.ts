@@ -8,11 +8,15 @@ import { UserdataService } from './service/userdata.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   title = 'directive in angular';
+   title = 'api in angular';
    users:any;
   constructor(private userdata:UserdataService)
-{
-  this.users=userdata.users();
-  console.log("userdata",userdata.users());
-}
+  {
+    userdata.users().subscribe((data)=>{
+      this.users=data;
+    
+      console.log(this.users);
+    });
+    
+  }
 }

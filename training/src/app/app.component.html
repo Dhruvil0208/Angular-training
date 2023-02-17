@@ -1,7 +1,7 @@
 
-<h1> {{title | titlecase }}</h1>
+<h1> {{title  }}</h1>
     <ul *ngFor="let user of users"> 
-        <li>{{user.name}} : {{user.age}} : {{user.email}}</li>
+        <li>{{user.first_name}}</li>
+        <li>{{user.last_name}}</li>
     </ul>
 
-<app-footer></app-footer>
