@@ -1,7 +1,15 @@
 
-<h1> {{title  }}</h1>
-    <ul *ngFor="let user of users"> 
-        <li>{{user.first_name}}</li>
-        <li>{{user.last_name}}</li>
-    </ul>
 
+<form #myForm="ngForm" (ngSubmit)="getdata(myForm.value)" >
+    <input type="text" name="firstname" ngModel placeholder="enter first name">
+    <br><br>
+    <input type="text" name="lastname" ngModel placeholder="enter last name">
+    <br><br>
+    <input type="text" name="middlename" ngModel placeholder="enter middle name">
+    <br><br>
+    <input type="text" name="sex" ngModel placeholder="enter sex name">
+    <br><br>
+    <input type="date" name="dob" ngModel placeholder="enter dob name">
+    <br><br>
+    <button>submit</button>
+</form>

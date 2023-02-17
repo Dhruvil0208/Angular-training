@@ -18,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http'
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

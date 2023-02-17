@@ -4,11 +4,14 @@ import {HttpClient} from '@angular/common/http'
   providedIn: 'root'
 })
 export class UserdataService {
-  url = "http://localhost:5076/Patient/55"
+  url = "http://localhost:5076/Patient/"
   constructor(private http : HttpClient) { }
 
   users(){
     return this.http.get(this.url);
+  }
+  saveUsers(data:any){
+    return this.http.post(this.url,data);
   }
  
 }

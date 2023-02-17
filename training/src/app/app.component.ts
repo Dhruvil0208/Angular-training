@@ -19,4 +19,11 @@ export class AppComponent {
     });
     
   }
+
+  getdata(data:any){
+    this.userdata.saveUsers(data).subscribe((result)=>{
+      console.log(result)}
+      );
+  }
+  
 }
