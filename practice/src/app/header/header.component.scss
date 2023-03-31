@@ -1,0 +1,24 @@
+nav{
+    background: linear-gradient(90deg, rgb(239, 137, 137) , rgb(174, 70, 70));
+    
+}
+
+.links{
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    padding: 5px 30px;
+    list-style: none;
+
+    a{
+        text-decoration: none;
+        font-size: xx-large;
+        color: rgb(226, 216, 216);
+        font-weight: 700;
+    }
+    
+}
