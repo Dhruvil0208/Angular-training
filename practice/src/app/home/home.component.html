@@ -1,1 +1,49 @@
-<p>home works!</p>
+<form [formGroup]="reactiveForm">
+  <fieldset class="container">
+    <div class="personal">
+      <div class="wrapper">
+        <label class="label">FirstName: </label>
+        <input type="text" formControlName="firstName" />
+      </div>
+      <div class="wrapper">
+        <label class="label">LastName: </label>
+        <input type="text" formControlName="lastName" />
+      </div>
+    </div>
+    <p>Address</p>
+      <i class="fa-solid fa-circle-plus" (click)="addAddress()"></i>
+    <div formArrayName="address">
+    <div
+      class="address"
+      *ngFor="let group of addressArray.controls; let i = index"
+      [formGroupName]="i"
+    >
+      
+      <div class="wrapper">
+        <label class="label" for="street">Street: </label>
+        <input type="text" formControlName="street" />
+      </div>
+      <div class="wrapper">
+        <label class="label" for="street">City: </label>
+        <input type="text" formControlName="city" />
+      </div>
+      <div class="wrapper">
+        <label class="label" for="street">State: </label>
+        <input type="text" formControlName="state" />
+      
+    </div>
+    <div formArrayName="phone">
+        <div class="wrapper" *ngFor="let phone of phone(i).controls; let j=index" >
+            <label class="label" for="street">Phone: </label>
+            <input type="text" [formControlName]="j" />
+          
+        </div>
+        <button type="button" (click)="addPhone(i)">Add phone</button>
+    </div>
+   
+    </div>
+</div>
+    
+    <button type="submit" (click)="formSubmit()">Submit</button>
+  </fieldset>
+</form>

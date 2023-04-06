@@ -16,14 +16,14 @@ export class SignupComponent {
 
 
   signUpForm = this.fb.group({
-    username: [null,Validators.required],
+    username: ['',Validators.required],
     email: ['',Validators.required],
     password: ['',Validators.required],
   })
 
   signUp(){
     console.log(this.signUpForm.value)
-    this.auth.postSignUpData(this.signUpForm.value).subscribe((res)=>
+    this.auth.postSignUpData(this.signUpForm.value).subscribe((res: any)=>
     {
       console.log(res);
     });
