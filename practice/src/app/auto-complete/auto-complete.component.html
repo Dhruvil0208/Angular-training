@@ -1,0 +1,14 @@
+<div class="container">
+  <form #searchForm="ngForm">
+    <input
+      type="text"
+      list="users"
+      name="searchTerm"
+      ngModel
+      placeholder="search user"
+    />
+    <datalist id="users">
+      <option *ngFor="let search of searchResult" >{{search.name}}</option>
+    </datalist>
+  </form>
+</div>
